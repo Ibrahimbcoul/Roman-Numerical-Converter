@@ -190,3 +190,16 @@ function convertToRoman(num) {
   }
   return num;
 }
+
+convertToRoman(2);
+convertToRoman(5);
+convertToRoman(7);
+convertToRoman(13);
+convertToRoman(27);
+convertToRoman(49);
+convertToRoman(255);
+convertToRoman(475);
+convertToRoman(899);
+convertToRoman(1589);
+convertToRoman(2054);
+convertToRoman(3999);
