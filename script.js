@@ -11,7 +11,6 @@ function convertToRoman(num) {
   for (let i = 0; i < numLength; i++) {
     arr.push(+split[i]);
   }
-  console.log(arr);
 
   // DEFINE DEFAULT VALUE
   const _one = "I";
@@ -163,21 +162,21 @@ function convertToRoman(num) {
   // IF NUM IS ONE DIGT
   if (numLength === 1) {
     const roman = unitFunction();
-    console.log(roman);
+    console.log(`${num} = ${roman}`);
     return roman;
   }
 
   // IF NUM IS TWO DIGTS
   if (numLength === 2) {
     const roman = dozenFunction() + unitFunction();
-    console.log(roman);
+    console.log(`${num} = ${roman}`);
     return roman;
   }
 
   // IF NUM IS THREE DIGITS
   if (numLength === 3) {
     const roman = hundredFunction() + dozenFunction() + unitFunction();
-    console.log(roman);
+    console.log(`${num} = ${roman}`);
     return roman;
   }
 
@@ -185,7 +184,7 @@ function convertToRoman(num) {
   if (numLength === 4) {
     const roman =
       thousandFunction() + hundredFunction() + dozenFunction() + unitFunction();
-    console.log(roman);
+    console.log(`${num} = ${roman}`);
     return roman;
   }
   return num;
